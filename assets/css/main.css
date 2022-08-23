@@ -3315,6 +3315,15 @@ body.is-touch .spotlight {
 
 /* Wrapper */
 
+#five.wrapper{
+	background-color: #181920;
+	padding: 2rem 3rem;
+}
+#five iframe{
+
+	box-shadow: -5px 5px 15px 10px;
+}
+
 .wrapper {
   padding: 6em 0 4em 0;
 }
@@ -3561,9 +3570,11 @@ body.landing .dropotron.level-0 {
   line-height: inherit;
   margin: 0;
   position: absolute;
-  top: 0;
+  top: 15px;
 }
-
+.logo-img{
+	border-radius: 8px;
+}
 #header nav {
   position: absolute;
   right: 1em;
