@@ -172,7 +172,6 @@ textarea {
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -3572,7 +3571,7 @@ body.landing .dropotron.level-0 {
   line-height: inherit;
   margin: 0;
   position: absolute;
-  top: 15px;
+  top: 10px;
 }
 .logo-img{
 	border-radius: 8px;
@@ -3630,7 +3629,9 @@ body.landing #page-wrapper {
 body.landing #header {
   background: transparent;
   box-shadow: none;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  transition: .3s;
 }
 
 /* Banner */
