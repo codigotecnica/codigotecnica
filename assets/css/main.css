@@ -3729,19 +3729,19 @@ body.is-touch #banner {
 }
 .iam {
   color: white;
-  font-size: 45px;
+  font-size: 35px;
   padding: 15px;
   font-weight: 100;
 }
 .text {
   color: white;
   /* border-right: 2px solid red; */
-  font-size: 45px;
+  font-size: 35px;
   font-family: sans-serif;
   color: rgb(0, 255, 200);
 }
 .typed-cursor {
-  font-size: 40px;
+  font-size: 30px;
   padding-left: 3px;
 }
 
