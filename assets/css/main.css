@@ -7,6 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+::-webkit-scrollbar{
+	width: 12px;
+}
+::-webkit-scrollbar-thumb{
+	background-color:#e44c65;
+}
+
+
 html,
 body,
 div,
