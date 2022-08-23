@@ -2697,7 +2697,8 @@ ul {
 }
 
 ul li {
-  padding-left: 0.5em;
+  /* padding-left: 0.5em; */
+  padding: .5rem;
 }
 
 ul.alt {
