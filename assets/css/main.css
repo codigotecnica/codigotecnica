@@ -3071,6 +3071,15 @@ input[type="button"]:disabled,
   white-space: nowrap;
   width: 10em;
   z-index: 1;
+  animation: next 2s linear infinite alternate;
+}
+@keyframes next {
+  0%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(10px);
+  }
 }
 
 .goto-next:before {
@@ -4096,6 +4105,12 @@ body.is-touch #banner {
   #banner .content header h2 {
     font-size: 1.5em;
   }
+  #banner .content header .highlights .iam{
+    font-size: 1.3em;
+  }
+  #banner .content header .highlights .text{
+    font-size: 1.2em;
+  }
 
   #banner .content .image {
     height: 9em;
@@ -4372,7 +4387,21 @@ header {
 }
 .experience-box{
   padding: 2rem;
-  border: 1px solid rgb(54, 54, 54);
+  backdrop-filter: blur(7px);
+  background-color: #181920a8;
+  width: initial !important;
+  min-width: 250px;
+  flex: 1;
+  height: 300px;
+  border-radius: 8px;
+}
+.container .service-all-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto;
 }
 #four-copy{
   background:url("./images/exprience-bg.jpg") no-repeat center center/cover;
@@ -4388,4 +4417,9 @@ header {
   height: 100%;
   background: linear-gradient(45deg, rgba(0, 0, 48, 0.664),rgba(53, 0, 9, 0.658));
   z-index: -1;
+}
+@media screen and (max-width:500px){
+  .experience-box{
+    padding: 1rem;
+  }
 }
