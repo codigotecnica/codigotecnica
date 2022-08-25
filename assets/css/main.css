@@ -181,7 +181,7 @@ html {
 
 html,
 body {
-  background: #1c1d26;
+  background: #ffffff;
 }
 
 body.is-preload *,
@@ -201,7 +201,7 @@ body,
 input,
 select,
 textarea {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0);
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 100;
@@ -214,18 +214,18 @@ a {
   -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #e44c65;
+  color: #0059ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e44c65 !important;
+  color: #0059ff !important;
   border-bottom-color: transparent;
 }
 
 strong,
 b {
-  color: #ffffff;
+  color: #161616;
   font-weight: 300;
 }
 
@@ -264,6 +264,7 @@ h2 {
   font-size: 2em;
   line-height: 1.5em;
   letter-spacing: -0.025em;
+  color: black;
 }
 
 h3 {
@@ -2262,7 +2263,7 @@ article.special {
 }
 
 header p {
-  color: #ffffff;
+  color: #000000;
   position: relative;
   margin: 0 0 1.5em 0;
 }
@@ -2579,7 +2580,7 @@ input[type="radio"] + label:before {
 }
 
 .icon.major {
-  background: #272833;
+  background: #ffffff;
   border-radius: 100%;
   cursor: default;
   display: inline-block;
@@ -2588,6 +2589,7 @@ input[type="radio"] + label:before {
   margin: 0 0 2em 0;
   text-align: center;
   width: 6em;
+  
 }
 
 .icon.major:before {
@@ -2603,7 +2605,7 @@ input[type="radio"] + label:before {
   transition: 0.3s;
 }
 .icon.major.alt:hover {
-  background-color: #0059ff;
+  background-color: #cecece;
 }
 
 .icon.major.alt:before {
@@ -2620,7 +2622,7 @@ input[type="radio"] + label:before {
 }
 
 .icon.major.alt:before {
-  color: #272833 !important;
+  color: #4a22ff !important;
   text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff,
     0 -1px 0 #ffffff;
 }
@@ -3217,7 +3219,7 @@ input[type="button"]:disabled,
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
-  background: rgba(23, 24, 32, 0.95);
+  background: rgb(255, 255, 255);
   border-style: solid;
   opacity: 1;
   position: absolute;
@@ -3427,29 +3429,6 @@ body.is-touch .spotlight {
   position: relative;
   overflow: hidden;
 }
-#four::before {
-  content: "";
-  position: absolute;
-  top: -3%;
-  left: -3%;
-  border-radius: 42% 58% 57% 43% / 30% 47% 53% 70%;
-  width: 500px;
-  height: 500px;
-  background-color: rgb(34 35 43);
-  animation: blub-before 10s linear infinite;
-}
-#four::after {
-  content: "";
-  position: absolute;
-  bottom: -3%;
-  right: -3%;
-  border-radius: 42% 58% 57% 43% / 30% 47% 53% 70%;
-  width: 500px;
-  height: 500px;
-  background-color: rgb(34 35 43);
-  animation: blub-before 10s linear infinite;
-  z-index: 1;
-}
 @keyframes blub-before {
   0% {
     border-radius: 42% 58% 57% 43% / 30% 47% 53% 70%;
@@ -3608,16 +3587,20 @@ body.landing .dropotron.level-0 {
 #header nav ul li a,
 #header nav ul li span {
   border: 0;
-  color: rgb(231, 231, 231);
+  color: rgb(0, 0, 0);
   display: inline-block;
   height: inherit;
   line-height: inherit;
   outline: 0;
+  font-family:  "Open Sans", sans-serif;
 }
 
 #header nav ul li a:hover,
 #header nav ul li span:hover {
   color: #0051ff !important;
+}
+#header nav ul li a.button {
+  color: #eeeeee !important;
 }
 #header nav ul li a.button,
 #header nav ul li span.button {
@@ -3625,6 +3608,7 @@ body.landing .dropotron.level-0 {
   line-height: 2em;
   padding: 0 1.25em;
   background-color: #0059ff;
+  font-weight: bold;
 }
 
 #header nav ul li a:not(.button):before,
@@ -3658,7 +3642,7 @@ body.landing #header {
 #banner {
   background-attachment: fixed;
   background-color: #272833;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("./images/banner.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3679,19 +3663,13 @@ body.landing #header {
 #banner:after {
   background-image: -moz-linear-gradient(
     top,
-    rgb(0 6 63 / 73%),
-    rgb(38 0 31 / 82%)
-  );
+   rgb(0 6 63 / 22%), rgb(38 0 31 / 65%) );
   background-image: -webkit-linear-gradient(
     top,
-    rgb(0 6 63 / 73%),
-    rgb(38 0 31 / 82%)
-  );
+   rgb(0 6 63 / 22%), rgb(38 0 31 / 65%) );
   background-image: -ms-linear-gradient(
     top,
-    rgb(0 6 63 / 73%),
-    rgb(38 0 31 / 82%)
-  );
+   rgb(0 6 63 / 22%), rgb(38 0 31 / 65%) );
   background-image: linear-gradient(top, rgb(0 6 63 / 73%), rgb(38 0 31 / 82%));
   content: "";
   display: block;
@@ -3764,8 +3742,8 @@ body.is-touch #banner {
   /* border-right: 2px solid red; */
   font-size: 35px;
   font-family: "Open Sans", sans-serif;
-  color: rgb(0 169 255);
-  font-weight: bold;
+  color: rgb(0, 174, 255);
+  font-weight: 400;
 }
 .typed-cursor {
   font-size: 30px;
@@ -3924,7 +3902,7 @@ body.is-touch #banner {
   }
 
   .spotlight .content {
-    background-color: #1c1d26;
+    background-color: #cacaca;
     border-width: 0 !important;
     border-top-width: 0.35em !important;
     bottom: auto !important;
@@ -4374,55 +4352,3 @@ body.is-touch #banner {
 header {
   font-family: "Open Sans", sans-serif !important;
 }
-
-.service-we-offer {
-  font-family: "Open Sans", sans-serif !important;
-  color: rgb(226, 226, 226);
-  font-size: 1.1em;
-}
-.exprience-heading {
-  color: #0059ff;
-}
-.experience-box {
-  padding: 2rem;
-  backdrop-filter: blur(7px);
-  background-color: #181920a8;
-  width: initial !important;
-  min-width: 250px;
-  flex: 1;
-  height: 300px;
-  border-radius: 8px;
-}
-.container .service-all-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  margin: 0 auto;
-}
-#four-copy {
-  background: url("./images/exprience-bg.jpg") no-repeat center center/cover;
-  position: relative;
-  z-index: 1;
-}
-#four-copy::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 48, 0.664),
-    rgba(53, 0, 9, 0.658)
-  );
-  z-index: -1;
-}
-@media screen and (max-width: 500px) {
-  .experience-box {
-    padding: 1rem;
-  }
-}
-

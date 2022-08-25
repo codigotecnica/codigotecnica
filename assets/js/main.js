@@ -214,36 +214,4 @@
 })(jQuery);
 
 const nav = document.querySelector("body.landing #header");
-const banner = document.querySelector("#banner");
-const elm = document.querySelector("#one");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        nav.style.backgroundColor = "#1e1f28c4";
-        console.log(entry);
-      }
-    });
-  },
-  {
-    root:null,
-    rootMargin: "0px",
-    threshold: 0.75,
-  }
-);
-observer.observe(elm);
-const observer1 = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        nav.style.backgroundColor = "transparent";
-      }
-    });
-  },
-  {
-    root:null,
-    threshold: 0.25,
-  }
-);
-observer1.observe(banner);
+nav.style.backgroundColor = "rgb(239 240 255)";
