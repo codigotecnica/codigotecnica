@@ -214,20 +214,36 @@
 })(jQuery);
 
 const nav = document.querySelector("body.landing #header");
+const banner = document.querySelector("#banner");
+const elm = document.querySelector("#one");
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         nav.style.backgroundColor = "#1e1f28c4";
+        console.log(entry);
       }
     });
   },
   {
-    root: document.querySelector("#scrollArea"),
+    root:null,
     rootMargin: "0px",
+    threshold: 0.75,
+  }
+);
+observer.observe(elm);
+const observer1 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        nav.style.backgroundColor = "transparent";
+      }
+    });
+  },
+  {
+    root:null,
     threshold: 0.25,
   }
 );
-const elm = document.querySelector("#one");
-observer.observe(elm);
+observer1.observe(banner);
