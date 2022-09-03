@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+html {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400 !important;
+}
 #header nav ul li a,
 #header nav ul li span {
   font-weight: bold;
   font-weight: 400;
+}
+header h2 + p {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 400 !important;
 }
 .banner-heading {
   font-weight: 500;
@@ -34,22 +43,51 @@ header h2 {
   font-size: 1.1em;
 }
 #four {
-  background-color: #ffffff;
-  background-image: radial-gradient(
-      circle at center center,
-      #444df715,
-      #ebebeb96
-    ),
-    repeating-radial-gradient(
-      circle at center center,
-      #d8d8d811,
-      #444df710,
-      8px,
-      transparent 76px,
-      transparent 77px
-    );
-  background-blend-mode: multiply;
+  background-color: rgb(252, 252, 252);
 }
+
+.service_para {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 16px;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+.service-box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.service-box {
+  padding: 0 !important;
+  display: flex;
+  height: 450px;
+  box-shadow: 2px 5px 12px 0 rgb(0 0 0 / 50%);
+  flex: 0 1 49%;
+  position: relative;
+}
+.service-box.heiglight {
+  flex: 0 1 100%;
+  height: 300px;
+}
+.service-box .info {
+  flex: 1;
+  padding: 1rem;
+  border-right: 3px solid #0029e2;
+}
+.info h3 {
+  color: #0029e2;
+  font-weight: 600;
+  font-family: "Electrolize", sans-serif;
+  font-size: 1.6rem;
+}
+.service-box .img {
+  flex: 1;
+}
+
 .spotlight {
   box-shadow: none;
 }
@@ -69,53 +107,65 @@ header h2 {
   z-index: -1;
 }
 #four-copy h2,
-#four-copy p{
-    color: white;
+#four-copy p {
+  color: white;
 }
-
 
 .service-we-offer {
-    font-family: "Open Sans", sans-serif !important;
-    color: rgb(0, 0, 0);
-    font-size: 1.1em;
-    font-weight: 400;
+  font-family: "Open Sans", sans-serif !important;
+  color: rgb(0, 0, 0);
+  font-size: 1.1em;
+  font-weight: 400;
 }
 .exprience-heading {
-    color: #4a22ff !important;
-    font-family: "Open Sans", sans-serif !important;
-    font-weight: 500;
-    
-  }
+  color: #4a22ff !important;
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500;
+}
+.experience-box {
+  padding: 2rem;
+  backdrop-filter: blur(7px);
+  background-color: #ffffffd7;
+  width: initial !important;
+  min-width: 250px;
+  flex: 1;
+  height: 300px;
+  border-radius: 8px;
+}
+.container .service-all-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
   .experience-box {
-    padding: 2rem;
-    backdrop-filter: blur(7px);
-    background-color: #ffffffd7;
-    width: initial !important;
-    min-width: 250px;
-    flex: 1;
-    height: 300px;
-    border-radius: 8px;
+    padding: 1rem;
   }
-  .container .service-all-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    margin: 0 auto;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+}
+#five.wrapper {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .service-box {
+    flex: 0 1 100%;
+    height: 320px;
   }
-  @media screen and (max-width: 500px) {
-    .experience-box {
-      padding: 1rem;
-    }
+}
+
+@media only screen and (max-width: 620px) {
+  .service-box {
+    flex-direction: column-reverse;
+    height: 500px !important;
   }
- 
-  #nav{
-    display: flex;
-    justify-content: space-between;
-    height: 8vh;
-    align-items: center;
-  }
-  #five.wrapper{
-    background-color: white;
-  }
+}
