@@ -64,7 +64,7 @@ header h2 {
 .service-box {
   padding: 0 !important;
   display: flex;
-  height: 450px;
+  height: 400px;
   box-shadow: 2px 5px 12px 0 rgb(0 0 0 / 50%);
   flex: 0 1 49%;
   position: relative;
