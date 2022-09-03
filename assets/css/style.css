@@ -58,7 +58,7 @@ header h2 {
 .service-box-container {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 .service-box {
@@ -66,7 +66,7 @@ header h2 {
   display: flex;
   height: 400px;
   box-shadow: 2px 5px 12px 0 rgb(0 0 0 / 50%);
-  flex: 0 1 49%;
+  flex: 0 1 48.5%;
   position: relative;
 }
 .service-box.heiglight {
@@ -76,7 +76,6 @@ header h2 {
 .service-box .info {
   flex: 1;
   padding: 1rem;
-  border-right: 3px solid #0029e2;
 }
 .info h3 {
   color: #0029e2;
