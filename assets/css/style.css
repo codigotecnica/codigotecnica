@@ -153,6 +153,54 @@ header h2 {
 #five.wrapper {
   background-color: white;
 }
+address{
+  color: white;
+}
+
+ul.icons li:hover{
+  opacity: .8;
+  transform: scale(1.1);
+  transition: .4s;
+}
+@media only screen and (min-width:750px) {
+  footer#footer{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2,1fr);
+    padding-bottom: 0;
+    background:linear-gradient(45deg, rgb(34, 34, 34) 65%,rgb(10, 47, 255) 30%);
+  }
+  .footer_details{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .icons{
+    grid-area: 1/2/2/-1;
+    align-self: center;
+    justify-self: center;
+    
+  }
+  .address{
+    grid-area: 1/1/-1/2;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+  }
+  .footer_details h5 .highlight{
+    color: #eeca00;
+    padding: 0 2px;
+  }
+  ul.copyright{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 @media only screen and (max-width: 1000px) {
   .service-box {
