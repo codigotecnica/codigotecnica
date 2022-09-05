@@ -86,7 +86,9 @@ header h2 {
 .service-box .img {
   flex: 1;
 }
-
+.icon.major.alt:hover{
+  transform: translateX(15%);
+}
 .spotlight {
   box-shadow: none;
 }
@@ -129,6 +131,7 @@ header h2 {
   flex: 1;
   height: 300px;
   border-radius: 8px;
+  transition: .5s;
 }
 .container .service-all-box {
   display: flex;
